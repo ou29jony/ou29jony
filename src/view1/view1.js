@@ -1,26 +1,33 @@
 'use strict';
-
 angular.module('myApp.view1', ['ngRoute'])
-
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/view1', {
+  $routeProvider.when('/view1/Presentations', {
     templateUrl: 'view1/view1.html',
     controller: 'View1Ctrl'
-      
-  });
-}])
-
-.controller('View1Ctrl', function($scope) {
-   
-
-    if (window.File && window.FileReader && window.FileList && window.Blob) {
-       
-    } else {
-        alert('The File APIs are not fully supported in this browser.');
-    }
-   
-    $scope.game = "Hallo World";
-    
-   
-    
+}).when('/view1/pictures', {
+    templateUrl: 'view1/view1.html',
+    controller: 'View1Ctrl'
+}).when('/view1/landpictures', {
+    templateUrl: 'view1/view1.html',
+    controller: 'View1Ctrl'
+}).when('/view1/me', {
+    templateUrl: 'view1/view1.html',
+    controller: 'View1Ctrl'
+}).when('/view1/kontakts', {
+    templateUrl: 'view1/view1.html',
+    controller: 'View1Ctrl'
+});
+}])/*.service('service',function(){
+	this.message="Aqa Var Schechemisa";
+	this.jony=function(){
+    return message;
+	};
+})*/
+.controller('View1Ctrl',function($scope,service) {
+   // $scope.articleId=1234;
+   $scope.result=Service.jony();
+   $scope.game = "Hallo World";
+  $scope.setId=function(id){
+   	$scope.articleId=id;
+ };
 });

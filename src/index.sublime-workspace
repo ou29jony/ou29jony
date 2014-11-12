@@ -1,1 +1,496 @@
-{}
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"wid",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "controller.js\n\nvar app=angular.module('myApp',[]);\n\napp.controller('ollercontr',function(){\nthis.data='shechemisa';\n});\n",
+			"file": "myApp/controller/controller.js",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 120,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.css",
+			"settings":
+			{
+				"buffer_size": 588,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "view1/view1.html",
+			"settings":
+			{
+				"buffer_size": 22,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 4427,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "'use strict';\n\nangular.module('myApp.view1', ['ngRoute'])\n\n.config(['$routeProvider', function($routeProvider) {\n  $routeProvider.when('/view1', {\n    templateUrl: 'view1/view1.html',\n    controller: 'View1Ctrl'\n      \n  });\n}])\n\n.controller('View1Ctrl', function($scope) {\n    $scope.game = \"Hallo World\";\n});\n",
+			"file": "view1/view1.js",
+			"file_size": 335,
+			"file_write_time": 130602046863091912,
+			"settings":
+			{
+				"buffer_size": 311,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"emm",
+				"Emmet: Merge Lines"
+			],
+			[
+				"htmlprettify",
+				"HTMLPrettify"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"br",
+				"Preferences: Browse Packages"
+			],
+			[
+				"bro",
+				"Preferences: Browse Packages"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 198.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/david/Documents/mean-master/MYAPP_HOME/src",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/view1"
+	],
+	"file_history":
+	[
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/css/CSS.css",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/app.css",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/view1/view1.js",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/app.js",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/view1/view1.html",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/index.html",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/myApp/controller/controller.js",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/myApp",
+		"/home/david/Documents/mean-master/myApp/packages/system/public/views/header.html",
+		"/home/david/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/david/Documents/mean-master/myApp/index.html",
+		"/home/david/Documents/mean-master/myApp/packages/articles/public/views/view.html",
+		"/home/david/Documents/mean-master/myApp/packages/system/public/views/index.html",
+		"/home/david/Documents/mean-master/myApp/packages/articles/public/views/list.html",
+		"/home/david/Documents/mean-master/myApp/packages/articles/public/views/edit.html",
+		"/home/david/Documents/mean-master/myApp/packages/articles/public/views/create.html",
+		"/home/david/Documents/mean-master/myApp/packages/users/public/views/login.html",
+		"/home/david/Documents/mean-master/myApp/packages/users/public/views/index.html",
+		"/home/david/Documents/mean-master/myApp/packages/users/public/views/forgot-password.html",
+		"/home/david/Documents/mean-master/myApp/packages/users/public/views/register.html",
+		"/home/david/Documents/mean-master/myApp/packages/theme/public/views/index.html",
+		"/home/david/Documents/mean-master/myApp/packages/theme/server/views/index.html",
+		"/home/david/Documents/mean-master/myApp/packages/users/public/views/reset-password.html",
+		"/home/david/Dokumente/mean-master/myApp/packages/users/README.md",
+		"/home/david/Dokumente/mean-master/myApp/packages/theme/public/views/index.html",
+		"/home/david/Dokumente/mean-master/myApp/packages/access/app.js",
+		"/home/david/Dokumente/mean-master/myApp/mainpackages/index.html",
+		"/home/david/Dokumente/mean-master/myApp/.git/index",
+		"/home/david/Dokumente/mean-master/myApp/node_modules/meanio/node_modules/bower/node_modules/mout/lang/isNull.js",
+		"/home/david/Dokumente/mean-master/myApp/packages/users/server/models/user.js",
+		"/home/david/Dokumente/mean-master/myApp/bower.json",
+		"/home/david/Dokumente/mean-master/myApp/Gruntfile.js",
+		"/home/david/Dokumente/mean-master/myApp/karma.conf.js",
+		"/home/david/Dokumente/mean-master/myApp/LICENSE",
+		"/home/david/Dokumente/mean-master/myApp/mean.json",
+		"/home/david/Dokumente/mean-master/myApp/package.json",
+		"/home/david/Dokumente/mean-master/myApp/Procfile",
+		"/home/david/Dokumente/mean-master/myApp/README.md",
+		"/home/david/Dokumente/mean-master/myApp/server.js",
+		"/home/david/Dokumente/mean-master/myApp/.bowerrc",
+		"/home/david/Dokumente/mean-master/myApp/.csslintrc",
+		"/home/david/Dokumente/mean-master/myApp/.gitignore",
+		"/home/david/Dokumente/mean-master/myApp/.jshintignore",
+		"/home/david/Dokumente/mean-master/myApp/.jshintrc",
+		"/home/david/Dokumente/mean-master/myApp/.slugignore",
+		"/home/david/Dokumente/mean-master/myApp/.travis.yml",
+		"/home/david/Dokumente/mean-master/myApp/packages/articles/public/views/view.html",
+		"/home/david/Dokumente/mean-master/myApp/packages/articles/public/routes/articles.js",
+		"/home/david/Dokumente/mean-master/packages/access/app.js",
+		"/home/david/Dokumente/mean-master/Procfile",
+		"/home/david/Dokumente/mean-master/bower.json",
+		"/home/david/Dokumente/mean-master/Gruntfile.js",
+		"/home/david/Dokumente/mean-master/karma.conf.js",
+		"/home/david/Dokumente/mean-master/LICENSE",
+		"/home/david/Dokumente/mean-master/mean.json",
+		"/home/david/Dokumente/mean-master/package.json",
+		"/home/david/Dokumente/mean-master/server.js",
+		"/home/david/Dokumente/mean-master/.bowerrc",
+		"/home/david/Dokumente/mean-master/.csslintrc",
+		"/home/david/Dokumente/mean-master/.gitignore",
+		"/home/david/Dokumente/mean-master/.jshintignore",
+		"/home/david/Dokumente/mean-master/.jshintrc",
+		"/home/david/Dokumente/mean-master/.slugignore",
+		"/home/david/Dokumente/mean-master/.travis.yml",
+		"/home/david/Dokumente/mean-master/config/env/all.js",
+		"/home/david/Dokumente/mean-master/README.md"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"o.1",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "myApp/controller/controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "view1/view1.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4427,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2880,
+								2880
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 918.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "view1/view1.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								289,
+								289
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"index.html",
+				"mainpackages/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

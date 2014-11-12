@@ -2,14 +2,17 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
- 
-  <meta name="description" content="">
-   <script src="anwender/angular-cookies.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+
+    <meta name="description" content="">
+    <script src="anwender/angular-cookies.js"></script>
     <script src="anwender/angular.js"></script>
     <script src="anwender/angular-route.js"></script>
 
@@ -18,75 +21,113 @@
     <script src="anwender/angular-loader.js"></script>
     <a href="Content/bootstrap.css.map"></a>
     <link href="Content/bootstrap.css" rel="stylesheet" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
-  <link rel="stylesheet" href="app.css"/>
-  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
-
-
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="app.css" />
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 
 
 
-    
+
+
+
+
 </head>
+
 <body>
-     <!--
+    <!--
   <ul class="menu">
      
     <li><a href="#/view1">view1</a></li>
     <li><a href="#/view2">view2</a></li>
       -->
-  </ul>
-    
+    </ul>
+
+<version-directive_test
+
+
  
-  
 
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-    <div ng-view></div>
+    <div>
+        <span app-version></span>
+    </div>
 
-  <div>  <span app-version></span></div>
-  
-  
+    <div </div>
+
+        <div class="row ">
+            <div class="col-md-1"></div>
+            <div class="col-md-1"></div>
+
+            <div class="col-md-8 background" ng-controller="View1Ctrl">
+      <table>
+                <th class="col-md-2">
+                <a ng-href="#/view1/Presentations" ng-click="setId(1)">
+                <button  type="button" class="btn btn-info btn-sm buttonwidth"> Presentations</button></a>
+                </th>
+                <td class="col-md-2">
+                 <a ng-href="#/view1/pictures" ng-click="setId(2)">
+                    <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Pictures</button>
+                    </a>
+                </td>
+                <td class="col-md-2">
+                <a ng-href="#/view1/landpictures" ng-click="setId(3)">
+                    <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Land Pictures</button></a>
+                </td>  
+                <td class="col-md-2">
+                <a ng-href="#/view1/me" ng-click="setId(4)">
+                    <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Me</button>
+                    </a>
+                </td>
+                <td class="col-md-2">
+                <a ng-href="#/view1/kontakts" ng-click="setId(5)">
+                    <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Kontakts</button>
+                    </a>
+
+                </td>
+                </table>
+                
+               
+<ng-view>  </ng-view>
 
 
-    <div class="rowsearch" >
-  <div class="col-md-6">  <input  type="text"  size="50" ng-model="search" /></div>
-  <div class="col-md-6"> <button  type="button" style="height:25px;position:absolute;right:-30px;" class="btn btn-primary btn-sm">SEARCH</button> </div>
-</div>
+            </div>
+
+
+
+
+        </div>
 
    
 
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
-  -->
 
 
-    <script src="Scripts/bootstrap.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-  <script src="app.js"></script>
-  <meta name="description" content="">
-    <script src="view1/view1.js"></script>
-    <script src="view2/view2.js"></script>
-    <script src="view2/view2_test.js"></script>
-    <script src="view1/view1_test.js"></script>
-      <script src="anwender/angular-cookies.js"></script>
-    <script src="anwender/angular.js"></script>
-    <script src="components/version/interpolate-filter.js"></script>
-    <script src="components/version/interpolate-filter_test.js"></script>
-    <script src="components/version/Kopie%20von%20interpolate-filter.js"></script>
-    <script src="components/version/Kopie%20von%20version_test.js"></script>
-    <script src="components/version/version-directive.js"></script>
-    <script src="components/version/version-directive_test.js"></script>
-    <script src="components/version/version.js"></script>
-    <script src="components/version/version_test.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
-  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
-  <link rel="stylesheet" href="app.css"/>
-  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+
+        <script src="Scripts/bootstrap.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="app.js"></script>
+        <meta name="description" content="">
+        <script src="view1/view1.js"></script>
+        <script src="view2/view2.js"></script>
+        <script src="view2/view2_test.js"></script>
+        <script src="view1/view1_test.js"></script>
+        <script src="anwender/angular-cookies.js"></script>
+        <script src="anwender/angular.js"></script>
+        <script src="components/version/interpolate-filter.js"></script>
+        <script src="components/version/interpolate-filter_test.js"></script>
+        <script src="components/version/Kopie%20von%20interpolate-filter.js"></script>
+        <script src="components/version/Kopie%20von%20version_test.js"></script>
+        <script src="components/version/version-directive.js"></script>
+        <script src="components/version/version-directive_test.js"></script>
+        <script src="components/version/version.js"></script>
+        <script src="components/version/version_test.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+        <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+        <link rel="stylesheet" href="app.css" />
+        <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </body>
+
 </html>
