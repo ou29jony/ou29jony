@@ -17,17 +17,17 @@ angular.module('myApp.view1', ['ngRoute'])
     templateUrl: 'view1/view1.html',
     controller: 'View1Ctrl'
 });
-}])/*.service('service',function(){
+}]).service('service',function(){
 	this.message="Aqa Var Schechemisa";
 	this.jony=function(){
     return message;
 	};
 })*/
-.controller('View1Ctrl',function($scope,service) {
+.controller('View1Ctrl',['$scope','service',function($scope,service) {
    // $scope.articleId=1234;
-   $scope.result=Service.jony();
+   $scope.result=service.jony();
    $scope.game = "Hallo World";
   $scope.setId=function(id){
    	$scope.articleId=id;
  };
-});
+}]);
