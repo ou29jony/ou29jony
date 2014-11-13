@@ -22,7 +22,7 @@ angular.module('myApp.view1', ['ngRoute'])
 });
 }])
 .controller('View1Ctrl',function($scope,service) {
-   $scope.articleId=1;
+   
   $scope.nummber=7;
       $scope.array=[];
       $scope.addMessage=function(message){
