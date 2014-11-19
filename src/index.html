@@ -36,112 +36,96 @@
 </head>
 
 <body>
-    <!--
-  <ul class="menu">
-     
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-      -->
-    </ul>
 
-<version-directive_test
+    <span app-version></span>
+    <div class="row ">
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
 
-
- 
-
-    <div>
-        <span app-version></span>
-    </div>
-
-    <div </div>
-
-        <div class="row ">
-            <div class="col-md-1"></div>
-            <div class="col-md-1"></div>
-
-            <div class="col-md-8 background" ng-controller="View1Ctrl">
-      <table>
-                <th class="col-md-2">
+        <div class="col-md-8 background" ng-controller="View1Ctrl">
+        {{etwas}}
+         <table>
+           <td class="col-md-2">
                 <a ng-href="#/view1/1234" ng-click="setId(1)">
-                <button  type="button" class="btn btn-info btn-sm buttonwidth"> Presentations</button></a>
-                </th>
-                <td class="col-md-2">
-                 <a ng-href="#/view1/pictures" ng-click="setId(2)">
-                    <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Pictures</button>
-                    </a>
+                    <button  type="button" class="btn btn-info btn-sm buttonwidth"> Presentations</button></a>
                 </td>
                 <td class="col-md-2">
+                   <a ng-href="#/view1/pictures" ng-click="setId(2)">
+                    <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Pictures</button>
+                </a>
+            </td>
+
+            <td class="col-md-2">
                 <a ng-href="#/view1/landpictures" ng-click="setId(3)">
                     <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Land Pictures</button></a>
                 </td>  
                 <td class="col-md-2">
-                <a ng-href="#/view1/me" ng-click="setId(4)">
-                    <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Me</button>
+                    <a ng-href="#/view1/me" ng-click="setId(4)">
+                        <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Me</button>
                     </a>
                 </td>
                 <td class="col-md-2">
-                <a ng-href="#/view1/kontakts" ng-click="setId(5)">
-                    <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Kontakts</button>
+                    <a ng-href="#/view1/kontakts" ng-click="setId(5)">
+                        <button style="width:121px;" type="button" class="btn btn-info btn-sm buttonwidth">Kontakts</button>
                     </a>
 
                 </td>
-                </table>
-                
-               <nav>
-  <ul class="pagination" >
-    <li><a  href="#/view1/43" ng-click="minusId(articleId);"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
-    <li><a ng-show="articleId>0" href="#/view1/pictures" ng-click="setId(articleId);">{{articleId}}</a></li>
-    <li><a ng-show="articleId+1>0" href="#/view1/pictures" ng-click="setId(articleId+1);">{{articleId+1}}</a></li>
-    <li><a ng-show="articleId+2>0" href="#/view1/landpictures" ng-click="setId(articleId+2);">{{articleId+2}}</a></li>
-    <li><a ng-show="articleId+3>0" href="#/view1/me" ng-click="setId(articleId+3);" >{{articleId+3}}</a></li>
-    <li><a ng-show="articleId+4>0" href="#/view1/kontakts" ng-click="setId(articleId+4)">{{articleId+4}}</a></li>
-    <li><a  href="#/view1/432"  ng-click="pliusId(articleId);">
-    <span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
-  </ul>
-</nav>
+            </table>
 
-<div ng-view>  </div>
+            <nav>
+              <ul class="pagination" >
+                <li><a  href="#/view1/43" ng-click="minusId(articleId);"><span aria-hidden="true">&laquo;</span><span    class="sr-only">Previous</span></a></li>
+                <li><a ng-show="articleId>0" ng-href="#/view1/pictures" ng-click="setId(articleId);">{{articleId}}</a></li>
+                <li><a ng-show="articleId+1>0" ng-href="#/view1/pictures" ng-click="setId(articleId+1);">{{articleId+1}}</a></li>
+                <li><a ng-show="articleId+2>0" ng-href="#/view1/landpictures" ng-click="setId(articleId+2);">{{articleId+2}}</a></li>
+                <li><a ng-show="articleId+3>0" ng-href="#/view1/me" ng-click="setId(articleId+3);" >{{articleId+3}}</a></li>
+                <li><a ng-show="articleId+4>0" ng-href="#/view1/kontakts" ng-click="setId(articleId+4)">{{articleId+4}}</a></li>
+                <li><a  href="#/view1/432"  ng-click="pliusId(articleId);">
+                    <span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+                </ul>
 
-
-            </div>
-
-
-
+            </nav>
 
         </div>
 
-   
+    </div>
+
+
+     <div ng-controller="View1Ctrl">
+<input type="text" ng-model="textr">
+<button ng-click="method()">button</button>
+{{textr}}
+</div>
 
 
 
 
 
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <meta name="description" content="">
+    <script src="view1/view1.js"></script>
+    <script src="view2/view2.js"></script>
+    <script src="view2/view2_test.js"></script>
+    <script src="view1/view1_test.js"></script>
+    <script src="Services/service.js"></script>
 
-        <script src="Scripts/bootstrap.js"></script>
-        <script src="Scripts/bootstrap.min.js"></script>
-        <script src="app.js"></script>
-        <meta name="description" content="">
-        <script src="view1/view1.js"></script>
-        <script src="view2/view2.js"></script>
-        <script src="view2/view2_test.js"></script>
-        <script src="view1/view1_test.js"></script>
-        <script src="Services/service.js"></script>
-
-        <script src="anwender/angular-cookies.js"></script>
-        <script src="anwender/angular.js"></script>
-        <script src="components/version/interpolate-filter.js"></script>
-        <script src="components/version/interpolate-filter_test.js"></script>
-        <script src="components/version/Kopie%20von%20interpolate-filter.js"></script>
-        <script src="components/version/Kopie%20von%20version_test.js"></script>
-        <script src="components/version/version-directive.js"></script>
-        <script src="components/version/version-directive_test.js"></script>
-        <script src="components/version/version.js"></script>
-        <script src="components/version/version_test.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
-        <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
-        <link rel="stylesheet" href="app.css" />
-        <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="anwender/angular-cookies.js"></script>
+    <script src="anwender/angular.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+    <script src="components/version/interpolate-filter_test.js"></script>
+    <script src="components/version/Kopie%20von%20interpolate-filter.js"></script>
+    <script src="components/version/Kopie%20von%20version_test.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/version-directive_test.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version_test.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="app.css" />
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
 </body>
 
 </html>

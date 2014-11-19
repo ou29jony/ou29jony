@@ -23,7 +23,6 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 .controller('View1Ctrl',function($scope,service) {
    
-  $scope.nummber=7;
       $scope.array=[];
       $scope.addMessage=function(message){
       $scope.array.push(message);
@@ -37,7 +36,10 @@ angular.module('myApp.view1', ['ngRoute'])
   $scope.articleId=id;
 
  };
-
+ $scope.method = function(){
+  $scope.textr=$scope.textr +'maksim';
+ } 
+$scope.etwas='HAllo maksim';
  $scope.minusId=function(id){
   console.log(id);
 if($scope.articleId> 5)

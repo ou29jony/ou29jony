@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"ge",
+				"getArray"
+			],
+			[
+				"a",
+				"addMessage"
+			],
+			[
+				"A",
+				"array"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
 				"border",
 				"border-radius"
 			],
@@ -20,48 +36,21 @@
 	"buffers":
 	[
 		{
-			"contents": "controller.js\n\nvar app=angular.module('myApp',[]);\n\napp.controller('ollercontr',function(){\nthis.data='shechemisa';\n});\n",
-			"file": "myApp/controller/controller.js",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 120,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app.css",
-			"settings":
-			{
-				"buffer_size": 588,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "view1/view1.html",
-			"settings":
-			{
-				"buffer_size": 22,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 4427,
+				"buffer_size": 5526,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "'use strict';\n\nangular.module('myApp.view1', ['ngRoute'])\n\n.config(['$routeProvider', function($routeProvider) {\n  $routeProvider.when('/view1', {\n    templateUrl: 'view1/view1.html',\n    controller: 'View1Ctrl'\n      \n  });\n}])\n\n.controller('View1Ctrl', function($scope) {\n    $scope.game = \"Hallo World\";\n});\n",
-			"file": "view1/view1.js",
-			"file_size": 335,
-			"file_write_time": 130602046863091912,
+			"contents": "\n\n\n<h1>{{articleId}} {{game}}</h1>\n \n<table>\n<th>\n      <input name=\"vorname\" ng-model=\"message\" type=\"text\" ></p></th>\n<th>  <button  ng-click=\"addMessage(message)\"type=\"button\" class=\"btn btn-info btn-sm\">Send</button></th>\n\n<div ng-show=\"true\">\n</div>\n\n</table>",
+			"file": "view1/view1.html",
+			"file_size": 285,
+			"file_write_time": 130603868499619353,
 			"settings":
 			{
-				"buffer_size": 311,
+				"buffer_size": 264,
 				"line_ending": "Unix"
 			}
 		}
@@ -72,6 +61,10 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"ang",
+				"Package Control: Install Package"
+			],
 			[
 				"pa",
 				"Package Control: Install Package"
@@ -133,7 +126,7 @@
 				"Set Syntax: HTML"
 			]
 		],
-		"width": 449.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -155,17 +148,24 @@
 	"expanded_folders":
 	[
 		"/home/david/Documents/mean-master/MYAPP_HOME/src",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/pictures",
 		"/home/david/Documents/mean-master/MYAPP_HOME/src/view1"
 	],
 	"file_history":
 	[
-		"/home/david/Documents/mean-master/MYAPP_HOME/src/css/CSS.css",
-		"/home/david/Documents/mean-master/MYAPP_HOME/src/app.css",
-		"/home/david/Documents/mean-master/MYAPP_HOME/src/view1/view1.js",
-		"/home/david/Documents/mean-master/MYAPP_HOME/src/app.js",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/index-async.html",
 		"/home/david/Documents/mean-master/MYAPP_HOME/src/view1/view1.html",
 		"/home/david/Documents/mean-master/MYAPP_HOME/src/index.html",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/Services/service.js",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/app.js",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/view1/view1.js",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/app.css",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/Services/service",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/Services/sdad.html",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/services",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/view2/view2.html",
 		"/home/david/Documents/mean-master/MYAPP_HOME/src/myApp/controller/controller.js",
+		"/home/david/Documents/mean-master/MYAPP_HOME/src/css/CSS.css",
 		"/home/david/Documents/mean-master/MYAPP_HOME/src/myApp",
 		"/home/david/Documents/mean-master/myApp/packages/system/public/views/header.html",
 		"/home/david/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
@@ -242,6 +242,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"4",
+			"zahl",
+			"html",
+			"View1Ctrl",
+			"View1",
+			"view1",
+			"articleId",
+			"	\n",
+			"5",
 			"o.1",
 			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
 		],
@@ -261,82 +270,54 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "myApp/controller/controller.js",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 120,
+						"buffer_size": 5526,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								120,
-								120
+								1406,
+								1406
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1694.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 588,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								309,
-								309
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 51.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "view1/view1.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 22,
+						"buffer_size": 264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17,
-								17
+								0,
+								0
 							]
 						],
 						"settings":
@@ -347,65 +328,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4427,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2880,
-								2880
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 918.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "view1/view1.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 311,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								289,
-								289
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -488,7 +411,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 258.0,
+	"side_bar_width": 341.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
